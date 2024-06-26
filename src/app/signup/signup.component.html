@@ -1,0 +1,46 @@
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container  h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <h3 class="mb-5">Signup Form</h3>
+  <form [formGroup]="signupForm">
+              <div class="form-outline mb-4">
+                <input formControlName="name" type="text"   class="form-control form-control-lg" />
+                <label class="form-label" >Name</label> 
+                <div *ngIf="signupForm.controls['name'].invalid && signupForm.controls['name'].touched" class="text-danger">
+                    Name is required.
+                  </div>
+              </div>
+              <div class="form-outline mb-4">
+                <input formControlName="email" type="email"  class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX-2">Email</label>
+                <div
+                *ngIf="signupForm.controls['email'].invalid && signupForm.controls['email'].touched"
+                class="text-danger">
+                Email is required and should be a valid email address.
+              </div>
+              </div>
+  
+              <div class="form-outline mb-4">
+                <input formControlName="password" type="password"  class="form-control form-control-lg" />
+                <label class="form-label" >Password</label> <div
+                *ngIf="signupForm.controls['password'].invalid && signupForm.controls['password'].touched"
+                class="text-danger">
+                Password is required and should be at least 6 characters long.
+              </div>
+              </div>
+  
+              
+              <button class="btn btn-warning btn-lg btn-block"  (click)="submitForm()" type="submit">Register</button>
+            </form>
+              <hr class="my-4">
+  <a routerLink="/">Already Member Login Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

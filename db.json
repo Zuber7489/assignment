@@ -1,0 +1,19 @@
+{
+  "employeedetails": [
+    {
+      "name": "Rahul kumarcc",
+      "email": "rahul@gmail.com",
+      "position": "Angular ",
+      "salary": "35000",
+      "id": "1"
+    }
+  ],
+  "signup": [
+    {
+      "name": "Zuber Shaikh",
+      "email": "rahul@gmail.com",
+      "password": "123",
+      "id": "1"
+    }
+  ]
+}
