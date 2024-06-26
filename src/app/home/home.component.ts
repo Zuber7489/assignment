@@ -3,11 +3,11 @@ import { CrudService } from '../crud.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-employee-management-system',
-  templateUrl: './employee-management-system.component.html',
-  styleUrls: ['./employee-management-system.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class EmployeeManagementSystemComponent implements OnInit {
+export class HomeComponent implements OnInit {
 data:any;
 id:any;
 dataid:any;

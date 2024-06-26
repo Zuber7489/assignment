@@ -35,7 +35,7 @@ password:new FormControl('',Validators.required)
   
           if (this.finder) {
             alert('Login Successfully');
-            this.router.navigate(['/employeedetails']); // Redirect to the employeedetails component
+            this.router.navigate(['/home']); // Redirect to the employeedetails component
           } else {
             alert('Please Enter Correct Email or Password');
           }
